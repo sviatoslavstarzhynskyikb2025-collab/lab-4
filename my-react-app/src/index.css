@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* dark: працює від класу "dark" на <html>, а не від налаштувань ОС */
+@custom-variant dark (&:where(.dark, .dark *));

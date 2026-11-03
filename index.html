@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Starzhynskyi Sviatoslav</title>
+    <link rel="stylesheet" href="my-react-app/styles.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <h1>Starzhynskyi Sviatoslav</h1>
+        <p><strong>Junior Cybersecurity / SOC Analyst</strong></p>
+        <p>Lviv, Ukraine</p>
+        <p>
+            Email: <a href="mailto:starzinskijsvatoslav@gmail.com">starzinskijsvatoslav@gmail.com</a> |
+            GitHub: <a href="https://github.com/sviatoslavstarzhynskyikb2025-collab" target="_blank">GitHub</a> |
+            LinkedIn: <a href="https://linkedin.com/in/svyatoslav474" target="_blank">LinkedIn</a>
+        </p>
+        <button id="theme-toggle" type="button">🌙 Змінити тему</button>
+    </header>
+    <main>
+        <section>
+            <h2>Про мене</h2>
+            <p>Студент 2-го курсу спеціальності «Кібербезпека» НУ «Львівська політехніка». Активно розвиваю практичні навички з мережевої безпеки, Linux та програмування на Python.</p>
+        </section>
+
+        <section>
+            <h2>Освіта</h2>
+            <ul>
+                <li>
+                    <strong>Національний університет «Львівська політехніка»</strong> — Бакалавр, Кібербезпека (2-й курс)
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Навички</h2>
+            <ul>
+                <li>Основи кібербезпеки та мережева безпека (Network Security)</li>
+                <li>Основи ОС Linux та віртуалізації</li>
+                <li>Програмування на Python (скрипти, ООП)</li>
+                <li>Веб-технології (HTTP/HTTPS, клієнт-серверна архітектура)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Сертифікати та курси</h2>
+            <ul>
+                <li><strong>TryHackMe:</strong> SECO - Cyber Security 101 &amp; Pre Security Path</li>
+                <li><strong>Prometheus:</strong> CS50 - Вступ до кібербезпеки</li>
+                <li><strong>Prometheus:</strong> Безпека в інтернеті під час війни</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Мови</h2>
+            <ul>
+                <li>Українська — Рідна</li>
+                <li>Англійська — A2</li>
+            </ul>
+        </section>
+    </main>
+
+    <section id="reviews">
+        <h2>Відгуки роботодавців</h2>
+        <div id="reviews-list"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Святослав Старжинський</p>
+        <h3>Інфо про систему</h3>
+        <ul id="storage-info"></ul>
+    </footer>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button id="close-modal" type="button">✕ Закрити</button>
+        <h2>Зворотний зв'язок</h2>
+        <form action="https://formspree.io/f/xwllrjyq" method="POST">
+            <input type="text" name="name" placeholder="Ім'я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Номер телефону">
+            <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
